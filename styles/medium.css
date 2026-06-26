@@ -1,0 +1,231 @@
+/* Media query for medium screen size (tablet) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .spotlight-card.large-screen-only {
+    display: none;
+  }
+  .event-card h3, .weather-card h3, .news-card h3, .spotlight-card h3, .join-card h3{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .join-card .join-button {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  nav h1{
+    font-size: 1.5rem;
+  }
+  nav h2{
+      font-size: 1rem;
+  }
+  main {
+    margin-top: 180px;
+  }
+  main .hero-message {
+    top: -8rem;
+    left: -2rem;
+  }
+  main .hero-message h1 {
+    font-size: 1.8rem;
+  }
+  main .hero-message h2 {
+      font-size: 1.2rem;
+  }
+  main .hero-message h3 {
+    font-size: .8rem;
+  }
+  .image-card img {
+    transition: transform 0.5s;
+  }
+  .image-card img:hover {
+    transform: scale(1.1);
+    border: 7px solid;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.66), 0 6px 12px rgba(0,0,0,0.83);
+    border-color: var(--accent3-color);
+    transition: 0.5s;
+  }
+  .join-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .spotlight-card{
+    width: 50%;
+  }
+  .event-card {
+    margin-top: 26px;
+  }
+  .news-section {
+  order: 1;
+  margin-top: 30px;
+  }
+  .spotlight-section {
+    order: 2;
+  }
+  .spotlight-view {
+    display: flex;
+    flex-direction: row;
+  }
+  .spotlight-card:nth-last-child(2) {
+    margin-left: 20px;
+  }
+  .spotlight-card img{
+    width: 100%;
+  }
+  .spotlight-card h3, .event-card h3, .weather-card h3{
+    margin: 0;
+  }
+  .join-section {
+    order: 3;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    order: 4;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .event-section, .weather-section{
+    justify-content: center;
+  }
+  .event-card, .weather-card{
+    justify-content: space-between;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+  }
+  .events-section hr, .weather-section hr{
+    float: left;
+    width: 94%;
+  }
+  footer .sitespecifics, footer .contact-info {
+    display: flex;
+    flex-direction: row;
+  }
+  #footerinfo {
+    display: flex;
+  }
+  #footerinfo p {
+    border-right: 2px solid;
+  }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
+  .join-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .join-devider {
+    display: flex;
+    flex-direction: row;
+}
+
+  .join-page form input,
+  .join-page form select,
+  .join-page form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .join-table {
+    margin-top: 580px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+  }
+  .join-page main {
+    margin-bottom: -100px;
+    margin-top: 100px;
+    }
+  .join-page .join-form {
+    width: 30%;
+  }
+  .join-page .join-form input {
+    width: 100%;
+  }
+  .join-page .join-button {
+    padding: 10px 70px;
+    margin-left: 0;
+    margin-top: 20px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .join-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .join-thanks h1 {
+    align-self: center;
+    justify-content: center;
+    font-size: 3.5rem;
+  }
+  .join-thanks p {
+    align-self: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  /* Directory page */
+.icon-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+.icon-view .join-card { 
+  flex-basis: 50%; 
+  box-sizing: border-box;
+  margin-bottom: -40px;
+}
+.list-view li span {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.list-view li .business-name,
+.list-view li .business-address {
+    flex-basis: 50%;
+}
+.list-view li .business-phone,
+.list-view li .business-website {
+    flex-basis: 100%;
+}
+.business-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 15px;
+  justify-content: left;
+}
+.business-info .business-name,
+.business-info .business-address { 
+  grid-row: 1;
+}
+.business-info .business-phone,
+.business-info .business-website {
+  grid-row: 2;
+}
+.business-info .business-name,
+.business-info .business-phone {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+}
+.business-info .business-address,
+.business-info .business-website {
+  display: flex;
+  justify-content: left;
+  padding-top: 4px;
+}
+}

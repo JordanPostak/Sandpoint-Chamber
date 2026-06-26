@@ -1,0 +1,386 @@
+/* Media query for large screen size (desktop) */
+@media screen and (min-width: 1200px) {
+  :root {
+    /* color palette */
+    --primary-color: #013c72;
+    --secondary-color:#2770b6;
+    --accent1-color: #ffffff;
+    --accent2-color: #99dee4;
+    --accent3-color: #ff9d00;
+    --accent4-color: #eaeaea;
+    --accent5-color: #000000;
+    
+
+    /* fonts */
+    --heading-font: "IM Fell French Canon";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    /* chosen from among colors above */
+    --headline-color-on-white: #013c72;  /* headlines on a white background */ 
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #013c72; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #fffafa; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #2770b6  ;
+    --nav-link-color: #fffafa;
+    --nav-background-color: #2770b6;
+    --nav-hover-link-color: #ff9d00;
+    --nav-hover-background-color: #013c72;
+}
+  #primaryNav {
+    display: flex;
+    margin-top: -115px;
+    margin-left: 300px;
+    padding-bottom: 5px;
+  }
+  nav button {
+    display: none;
+  }
+  .horizontal h1{
+    font-size: 1.5rem;
+  }
+  .horizontal h2{
+    font-size: 1rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  nav ul a {
+    color: var(--nav-link-color);
+    font-size: 1.2rem;
+    display: flex;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 7px;
+  }
+  nav.scrolled .primaryNav {
+    display: flex;
+}
+nav.scrolled ul li a {
+    margin-top: 145px;
+}
+nav.scrolled ul {
+  float: left;
+} 
+nav.scrolled .banner {
+position: fixed;
+margin-top: 6rem;
+margin-left: 40rem;
+}
+  .facebook-logo img, .linkedin-logo img{
+    height: 30px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    width: 100%;
+    align-items: start;
+    margin-top: 170px;
+    font-size: .7rem;
+    margin-left: -1.5rem;
+  }
+  main .hero-section .call-to-action p{
+    font-size: 1rem;
+  }
+  main .hero-section .call-to-action h2{
+    font-size: 2rem;
+  }
+  .hero-section img {
+    border-radius: 50px;
+    width: 100%;
+  }
+  .hero-section {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 4.5rem;
+    align-self: stretch
+  }
+  .discover {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+  .discover .hero {
+    margin-bottom: -80px;
+    width: 150%;
+    align-self: center;
+  }
+  .discover .hero .hero-message h1 {
+    font-size: 2rem;
+  }
+  .image-card img {
+    transition: transform 0.5s;
+  }
+  .image-card img:hover {
+    transform: scale(1.1);
+    border: 7px solid;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.66), 0 6px 12px rgba(0,0,0,0.83);
+    border-color: var(--accent3-color);
+    transition: 0.5s;
+  }
+  .discover h3 {
+    font-size: 1.3rem; 
+    margin-top: 60px;
+  }
+  .discover hr {
+    margin-top: -20px;
+  }
+
+  .call-to-action {
+    align-self: stretch
+  }
+ .hero-section .hero-message h3 {
+  font-size: .8rem; 
+  }
+
+  .hero-section .hero-message h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section .hero-message h2 {
+    font-size: 1.3rem; 
+  }
+  .hero-message {
+    margin-top: -2.5rem;
+    margin-left: -1rem;
+  }
+  .flex-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+  }
+  .event-card, .weather-card{
+    width: 100%;
+  }
+  .join-section {
+    grid-column: 1 / 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -1.3rem;
+  }
+  .join-card {
+    width:100%;
+  }
+  .spotlight-section hr, .spotlight-section h2 {
+    margin-left: -20px;
+}
+  .join-button {
+    margin: 20px 40px;
+  }
+  .spotlight-card.large-screen-only {
+    display: block;
+    width: 100%;
+  }
+  .news-section {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: auto;
+    margin-top: -300px;
+  }
+  .news-card {
+    width: auto;
+    margin-top: auto;
+  }
+  .spotlight-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+  }
+  .spotlight-section .spotlight-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .spotlight-view{
+    margin-left: 0;
+  }
+  .spotlight-card {
+    float: left;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .spotlight-card img{
+    width: 100%;
+  }
+  #footerinfo {
+    display: flex;
+  }
+  #footerinfo p {
+    border-right: 2px solid;
+  }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
+  footer .sitespecifics, footer .contact-info {
+    display: flex;
+    flex-direction: row;
+  }
+  #footerinfo {
+    display: flex;
+  }
+  #footerinfo p {
+    border-right: 2px solid;
+  }
+  .contact-info{
+    margin-left: 100px;
+  }
+  .info{
+    margin-left: 100px;
+  }
+  .spotlight-section {
+    width: 100%;
+    margin-left: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .spotlight-view {
+    width: 100%;
+  }
+  .spotlight-card{
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+ section hr{
+  width: 100%;
+ }
+ .news-section hr {
+  width: 97%;
+  float: left;
+ }
+ .hero-section, .news-section {
+  margin-left: 3rem;
+ }
+ .spotlight-section {
+  margin-left: 1.8rem;
+ }
+ footer {
+  width: 108%;
+ }
+ /*join page*/
+ .join-page th.middle,
+ .join-page td.middle {
+   width: 100px;
+ }
+ .join-devider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  margin-bottom: 0px;
+ }
+ .join-pge form {
+  display: flex;
+  flex-direction: column;
+ }
+ .join-table {
+  margin-top: 500px;
+  margin-bottom: 90px;
+  margin-left: 50px;
+}
+.join-thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+.join-thanks h1 {
+  align-self: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.join-thanks p {
+  align-self: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+/*directory page*/
+#directoryMain {
+  display: block;
+  margin-top: 170px;
+  font-size: 0.7rem;
+  margin-left: -1.5rem;
+}
+.icon-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start; 
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  gap: 70px; 
+  margin-bottom: 80px;
+}
+.business-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  
+}
+.icon-view .join-card {
+  flex-basis: 20%; 
+  box-sizing: border-box;
+  margin-bottom: -40px;
+}
+.business-info .business-name {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.business-info .business-phone {
+  grid-column: 2; 
+  grid-row: 1;
+  font-size: 1rem;
+}
+
+.business-info .business-address {
+  grid-column: 3; 
+  grid-row: 1;
+  font-size: 1rem;
+}
+
+.business-info .business-website {
+  grid-column: 4; 
+  grid-row: 1;
+  font-size: 1rem;
+}
+.contact-page { 
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+}
